@@ -1,0 +1,180 @@
+/* General Styles */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: #E0E0E0;
+  color: black;
+}
+
+h1 {
+  color: #484636;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  width: 6em;
+  padding: .5em;
+  border-radius: 0.5em;
+  font-size: 1em;
+  outline:none;
+}
+
+button:focus {
+  filter: brightness(90%);
+  border-style:solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+/* Game area style */
+#gameButtonArea {
+  width: 414px;
+  height: 410px;
+  padding: 20px;
+  position: relative;
+  background-color: #808080;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: darkgrey;
+}
+
+/* Game button styles */
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  border-style: solid;
+}
+
+#startBtn {
+  color: white;
+  font-family: 'Ubuntu', san-serif;
+  background-color: green;
+  border-color: white;
+  border-width: 2px;
+  border-style: outset; 
+  border-color: white;
+}
+
+#startBtn:active{
+  background-color: darkgreen;
+  border-style: inset; 
+}
+
+#stopBtn {
+  color: white;
+  font-family: 'Ubuntu', san-serif;
+  background-color: red;
+  border-width: 2px;
+  border-style: outset; 
+  border-color: white;
+}
+
+#stopBtn:active{
+  background-color: darkred;
+  border-style: inset; 
+}
+
+#button1 {
+  background: lightgreen;
+  border-radius: 100% 10% 10% 10%;
+}
+
+#button1:active,
+#button1.lit {
+  background: green;
+}
+
+#button2 {
+  background: lightblue;
+  border-radius: 10% 100% 10% 10%;
+}
+
+#button2:active,
+#button2.lit {
+  background: blue;
+}
+
+#button3 {
+  background: pink;
+  border-radius: 10% 10% 10% 100%;
+}
+
+#button3:active,
+#button3.lit {
+  background: red;
+}
+
+#button4 {
+  background: lightyellow;
+  border-radius: 10% 10% 100% 10%;
+}
+
+#button4:active,
+#button4.lit {
+  background: yellow;
+}
+
+/* Center styling */
+.center {
+  text-align: center;
+  position: relative;
+  background-color: #808080;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  user-select:none;
+}
+
+.center p {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+}
+
+/* Applied classes */
+.red {
+  color: red !important;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Progress Ring Style */
+.progress-ring {
+  z-index: 3;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  pointer-events:none;
+}
+
+.progress-ring__circle {
+  stroke:white;
+  stroke-width:6;
+  fill:transparent;
+  cx:100px;
+  cy:100px;
+}
+
+/* Glitch Button Style */
+.glitchButton {
+  z-index: 5;
+}
